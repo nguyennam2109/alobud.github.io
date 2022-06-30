@@ -219,8 +219,74 @@ footer {
   width: 100vw;
   backface-visibility: hidden;
 }
+.navbar{
+  padding: 50px;
+  position: absolute;
+  right: 0;
+}
+.dropdown a, .dropdown-mobile a { 
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  color: #ffffff; 
+  text-decoration: none;
+}
+.dropdown-mobile{
+  text-decoration: none;
+  list-style-type: none;
+  display: none; 
+}
+.dropdown a:hover, .dropdown a:focus{
+  background-color: transparent !important;
+}
+.dropdown .dropdown-menu {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s ease-in-out; 
+}
 
+.dropdown:hover .dropdown-menu, .dropdown-mobile:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1; 
+  padding: 16px 27px;
+  margin-top: 22px;
+  margin-left: -27px;   
+  box-shadow: 0 5px 10px 1px rgb(20 20 28 / 30%);
+  border-radius: 6px;
+  background: #111112; 
+}
+.dropdown-mobile:hover .dropdown-menu{
+  margin-top: -22px;
+}
+.dropdown .dropdown-menu li a, .dropdown-mobile .dropdown-menu li a {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+ 
+}
+.dropdown .dropdown-menu li a:hover{  
+    margin-left: 3px;
+    padding-right: 18px; 
+    color: #FF6;
+}
 
+.download{
+  display: flex;
+  margin: auto;
+  padding-right: 8rem;
+  padding-top: 2rem;
+}
+.download img {
+  width: 100%;
+  max-width: 200px;
+}
+.download button{
+  border: 3px solid #ffffff;
+    background: #ffffff;
+}
 /* home section */
 #home {
   display: -webkit-box;
@@ -539,7 +605,12 @@ footer a:hover {
 
 }
 
-
+@media screen and (max-device-width: 480px) {
+  .dropdown-mobile{ 
+    display: block; 
+  }
+} 
+ 
 @media (max-width: 700px) {
 
   #home {height: 100vh;}
