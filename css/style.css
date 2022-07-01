@@ -250,15 +250,16 @@ footer {
 .dropdown:hover .dropdown-menu, .dropdown-mobile:hover .dropdown-menu {
   visibility: visible;
   opacity: 1; 
-  padding: 16px 27px;
+  padding: 1rem 2rem;
   margin-top: 8px;
-  margin-left: -27px;   
+  margin-left: auto;   
   box-shadow: 0 5px 10px 1px rgb(20 20 28 / 30%);
   border-radius: 6px;
   background: #111112; 
 }
 .dropdown-mobile:hover .dropdown-menu{
   margin-top: -22px;
+  margin-left: -2rem;
 }
 .dropdown .dropdown-menu li a, .dropdown-mobile .dropdown-menu li a {
   color: #ffffff;
